@@ -3,7 +3,7 @@ const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: {
-    app: './src/array.js',
+    app: './src/async.js',
   },
   plugins: [
     // eslint-disable-next-line max-len

@@ -67,3 +67,67 @@ const array4 = Array(10).fill(10);
 console.log(array4);
 const array5 = [1, 2, 3, 4, 2];
 console.log(array5.fill(8, 2, 4));
+// es5中如何查找一个元素
+const array6 = [1, 2, 3, 4, 5];
+const filter = array6.filter((item)=>item===6);
+/*
+* filter 返回的是一个新数组
+* 没有找到返回的是一个空数组
+* 可以用来做验证查找，但是效率不是太高
+* filter 关注的是所有的值，找到所有的值
+* */
+console.log(filter, 'filter');
+// 找所有是偶数的元素
+const filter2 = array6.filter((item)=>item%2===0);
+console.log(filter2, 'filter2');
+// es6中如何产兆一个元素
+
+/**
+ * find 方法
+ * 未找到返回undefined
+ * 找到返回找的第一个元素
+ */
+
+const array7 = [1, 3, 4, 4, 5];
+const find = array7.find((item)=>item===6);
+console.log(find, 'find'); // 'undefined' 未找到返回undefined
+
+const find2 = array7.find((item)=>item%2===0);
+console.log(find2, 'find2');
+
+// 简单封装一个找到所有的偶数的方法
+
+function findEven(arr) {
+  const result = [];
+
+  arr.forEach((item)=>{
+    if (item%2 ===0) {
+      result.push(item);
+    }
+  });
+  // for (let i = 0; i<arr.length; i++) {
+  //   if (arr[i] %2 ==0) {
+  //     result.push(arr[i]);
+  //   }
+  // }
+  return result;
+}
+
+console.log(findEven(array7), '找到数组中所有的偶数');
+
+/**
+ *
+ * 思考
+ * 1 javascript世界里有哪些元素是可遍历的
+ * 2 如何给数据结构自定义遍历
+ * 3 find() 和 es5 的filter()有什么区别
+ *
+ * */
+
+// 查找元素的索引位置
+/*
+* findIndex
+* */
+
+
+const array8 = [1, 3, 4, 4, 5];
