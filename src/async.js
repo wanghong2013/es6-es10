@@ -30,9 +30,7 @@ async function getList() {
 
 function getHistoryData() {
   return new Promise((resolve, reject) => {
-    axios.get('https://jsonplaceholder.typicode.com/todos', {
-
-    }).then((res) => {
+    axios.get('https://jsonplaceholder.typicode.com/todos', {}).then((res) => {
       resolve(res)
     }).catch((err) => {
       reject(err)
@@ -45,8 +43,8 @@ function getHistoryData() {
 //   console.log(res)
 // })
 
-async  function  test() {
-  const data = await  getHistoryData();
+async function test() {
+  const data = await getHistoryData();
   console.log(data)
 }
 

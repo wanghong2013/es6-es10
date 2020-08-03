@@ -97,9 +97,9 @@ console.log(find2, 'find2');
 
 // 简单封装一个找到所有的偶数的方法
 
+// eslint-disable-next-line require-jsdoc
 function findEven(arr) {
   const result = [];
-
   arr.forEach((item) => {
     if (item % 2 === 0) {
       result.push(item);
@@ -117,9 +117,12 @@ console.log(findEven(array7), '找到数组中所有的偶数');
 /**
  *
  * 思考
- * 1 javascript世界里有哪些元素是可遍历的
+ * 1 java
+ * script世界里有哪些元素是可遍历的
  * 2 如何给数据结构自定义遍历
  * 3 find() 和 es5 的filter()有什么区别
+ *  todo  find 找到返回测试函数的第一个值，找不到返回undefined
+ *  todo  es5  filter 找不到返回一个空数组，找到的话把找到元素放在数组中
  *
  * */
 
@@ -129,6 +132,7 @@ console.log(findEven(array7), '找到数组中所有的偶数');
  * */
 
 
+// eslint-disable-next-line no-unused-vars
 const array8 = [1, 3, 4, 4, 5];
 
 
