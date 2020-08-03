@@ -36,3 +36,4 @@ for (let i = 0; i <3; i++) {
 // console.log(b); Uncaught ReferenceError: Cannot access 'b' before initialization
 // eslint-disable-next-line no-unused-vars
 const c = 10;
+
