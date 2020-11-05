@@ -109,7 +109,7 @@ class Animal {
     console.log(' i am eat')
   }
 
-  // 定义静态方法
+  // 定义静态方法 静态方法只能通过类来调用 
   static say() {
     console.log('say')
   }

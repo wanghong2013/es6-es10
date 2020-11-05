@@ -6,7 +6,7 @@ console.log(obj)
 
 
 
-//Set
+//Set 数据类型
 
 const s = new Set([1,3,3,2]);
 console.log(s,'ssss')
@@ -38,7 +38,7 @@ console.log(s)
 
 
 const map = new Map();
-//添加数据
+//添加数据  set方法  map 中的set方法不但有添加数据的功能还有修改数据的功能
 map.set(1,1)
 console.log(map.get(1));
 console.log(map.size)
@@ -64,7 +64,7 @@ console.log(map)
 //1 使用扩展运算符 (...)
 const myMap = new Map([[1,1],[2,2]]);
 
-
+console.log(myMap,'myMap')
 
 
 //todo es5中对象复制

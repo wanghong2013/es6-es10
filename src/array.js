@@ -13,7 +13,7 @@ for (let i = 0; i < myArray.length; i++) {
     break;
   }
 }
-// foreach 不支持 break continu
+// foreach 不支持 break continue
 myArray.forEach((item) => {
   console.log(item);
 });
